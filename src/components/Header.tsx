@@ -1,11 +1,11 @@
-import { BsMoonFill } from "react-icons/bs";
+import { BsMoon } from "react-icons/bs";
 
 const Header = () => {
   return (
     <div className="theme header">
         <h1 className="header__text">Where in the world?</h1>
         <div className="header__darkfield">
-            <BsMoonFill />
+            <BsMoon />
             <p>Dark mode</p>
         </div>
     </div>
