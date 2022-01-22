@@ -1,0 +1,27 @@
+$elements: hsl(0, 0%, 100%);
+$background: hsl(0, 0%, 98%);
+$input: hsl(0, 0%, 52%);
+$text: hsl(200, 15%, 8%);
+
+$elements--dark:hsl(209, 23%, 22%);
+$background--dark:hsl(207, 26%, 17%);
+$input--dark: hsl(209, 23%, 22%);
+$text--dark: hsl(0, 0%, 100%);
+
+.theme{
+    --elements:   #{$elements};
+    --background: #{$background};
+    --input:      #{$input};
+    --text:       #{$text};
+}
+  
+
+// .theme
+//   --color__primary: #{$color__primary}
+//   --color__secondary: #{$color__secondary}
+//   --color__text: #{$color__text}
+//   // Tema oscuro
+//   &--dark
+//     --color__primary: #{$color__primary--dark}
+//     --color__secondary: #{$color__secondary--dark}
+//     --color__text: #{$color__text--dark}
