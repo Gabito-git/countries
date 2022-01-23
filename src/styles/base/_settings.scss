@@ -13,6 +13,13 @@ $text--dark: hsl(0, 0%, 100%);
     --background: #{$background};
     --input:      #{$input};
     --text:       #{$text};
+
+    &--dark{
+        --elements:   #{$elements--dark};
+        --background: #{$background--dark};
+        --input:      #{$input--dark};
+        --text:       #{$text--dark};
+    }
 }
   
 
