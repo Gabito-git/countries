@@ -22,7 +22,7 @@
     &__input-field{
         background-color: var(--elements);
         border-radius: 3px;
-        box-shadow: 1px 2px 2px 1px rgba($background--dark, 0.05);
+        box-shadow: 1px 0 2px 1px rgba($background--dark, 0.05);
         margin-bottom: 4rem;
         padding-left: 2rem;
 
@@ -63,7 +63,7 @@
     &__select-field{
 
         background-color: var(--elements);
-        box-shadow: 1px 2px 2px 1px rgba($background--dark, 0.05);
+        box-shadow: 1px 0 2px 1px rgba($background--dark, 0.05);
         padding-right: 2rem;
         max-width: 60%;
 
