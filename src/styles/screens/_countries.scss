@@ -1,0 +1,85 @@
+.countries{
+    background-color: var(--background);
+    // background-color: turquoise;
+    flex: 1;
+
+    &__data-entry-container{
+        margin: 2rem 1rem;
+
+        @media all and(min-width: 558px){
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+    }
+
+    &__icon{
+        color: var(--text);
+        font-size: 1.4rem;
+    }
+
+    &__input-field{
+        background-color: var(--elements);
+        border-radius: 3px;
+        box-shadow: 1px 2px 2px 1px rgba($background--dark, 0.05);
+        margin-bottom: 4rem;
+        padding-left: 2rem;
+
+        align-items: center;
+        display: flex;
+
+        input{
+            background-color: transparent;
+            border: none;
+            color: var(--text);
+            padding: 1.5rem 2rem;
+            flex: 1;
+
+            &:focus{
+                outline: none;
+            }
+
+            &::placeholder{
+                color: var(--text);
+                font-size: 1.2rem;
+            }
+
+        }
+
+        @media all and(min-width: 374px){
+            max-width: 35rem;
+            margin: 0 auto 4rem auto;
+            padding-left: 1rem;
+        }
+
+        @media all and(min-width: 558px){
+            margin: 0;
+            flex-basis: 32rem;
+        }
+
+    }
+
+    &__select-field{
+
+        background-color: var(--elements);
+        box-shadow: 1px 2px 2px 1px rgba($background--dark, 0.05);
+        padding-right: 2rem;
+        max-width: 60%;
+
+        select{
+            background-color: transparent;
+            border: none;
+            color: var(--text);
+            outline: none;
+            padding: 1.5rem 2rem;
+            width: 100%;
+        }
+
+        @media all and(min-width: 558px){
+            flex-basis: 18rem;
+            max-width: 20rem;
+        }
+        
+    }
+}
