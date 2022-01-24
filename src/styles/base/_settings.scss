@@ -5,8 +5,8 @@ $text: hsl(200, 15%, 8%);
 
 $elements--dark:hsl(209, 23%, 22%);
 $background--dark:hsl(207, 26%, 17%);
-$input--dark: hsl(209, 23%, 22%);
-$text--dark: hsl(0, 0%, 100%);
+$input--dark: hsl(0, 0%, 98%);
+$text--dark: hsl(0, 0%, 90%);
 
 .theme{
     --elements:   #{$elements};
