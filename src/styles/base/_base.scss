@@ -17,3 +17,10 @@ html{
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
+
+.container{
+    @media all and(min-width: 373px){
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
