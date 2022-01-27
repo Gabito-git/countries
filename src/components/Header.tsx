@@ -1,5 +1,8 @@
 import { useContext } from "react";
+
 import { BsMoon } from "react-icons/bs";
+import { ImSun } from "react-icons/im";
+
 import { ThemeContext } from "../router/AppRouter";
 
 const Header = () => {
@@ -13,8 +16,8 @@ const Header = () => {
           className="header__darkfield"
           onClick={ () => setThemeIsDark( t => !t ) }
         >
-            <BsMoon />
-            <p>Dark mode</p>
+            {themeIsDark ? <ImSun />: <BsMoon />  }
+            <p>{ themeIsDark ? 'Ligth mode': 'Dark mode' }</p>
         </div>
     </div>
   );
