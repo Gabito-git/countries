@@ -2,7 +2,7 @@
 
     background-color: var(--elements);
     border: none;
-    box-shadow: 1px 0 2px 3px rgba($background--dark, 0.03);
+    box-shadow: 1px 0 2px 3px rgba($background--dark, 0.05);
     cursor: pointer;
     padding: 0.8rem 2rem;
 
@@ -14,17 +14,10 @@
         display: flex;
         gap: 5px;
     }
-    
-  
-   
-    
-
-    
 
     &__icon{
         font-size: 1.8rem;
         font-weight: bold;
-        // padding-top: 1rem;
         margin-right: 5px;
     }
 }
