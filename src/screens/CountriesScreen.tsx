@@ -1,4 +1,5 @@
 import { BsSearch } from "react-icons/bs";
+import CountryList from "../components/CountryList";
 
 const CountriesScreen = () => {
   return (
@@ -21,7 +22,7 @@ const CountriesScreen = () => {
           </div>
 
         </div>
-
+        <CountryList/>
       </div>
     </div>
   )
