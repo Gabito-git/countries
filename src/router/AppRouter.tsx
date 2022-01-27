@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Header from "../components/Header";
 import CountriesScreen from "../screens/CountriesScreen";
-import CountryScreen from "../screens/CountryScreen";
+import CountryScreen from "../screens/CountryDetailsScreen";
 
 
 interface ThemeContextProps{
