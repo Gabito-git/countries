@@ -12,6 +12,7 @@
         color: var(--text);
         margin-top: -0.4rem;
         padding: 2rem;
+        @include transition;
     }
 
     &__country-name{

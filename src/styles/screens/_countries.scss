@@ -1,10 +1,12 @@
 .countries{
     background-color: var(--background);
+    @include transition;
     // background-color: turquoise;
     flex: 1;
 
     &__data-entry-container{
         margin: 2rem 1rem;
+        @include transition;
 
         @media all and(min-width: 558px){
             align-items: center;
@@ -65,6 +67,7 @@
         background-color: var(--elements);
         box-shadow: 1px 0 2px 3px rgba($background--dark, 0.03);
         padding-right: 2rem;
+        @include transition;
         max-width: 60%;
 
         select{
