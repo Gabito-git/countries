@@ -1,0 +1,32 @@
+.countrycard{
+    box-shadow: 1px 0 2px 3px rgba($background--dark, 0.03);
+    margin: 1rem 0 2rem 0;
+    width: 21rem;
+
+    &__flag{
+        max-width: 100%;    
+    }
+
+    &__country-info{
+        background-color: var(--elements);
+        color: var(--text);
+        margin-top: -0.4rem;
+        padding: 2rem;
+    }
+
+    &__country-name{
+        margin-bottom: 1.5rem;
+    }
+
+    &__country-text{
+        font-size: 1.2rem;
+
+        p{
+            font-weight: 600;
+        }
+
+        span{
+            font-weight: 400;
+        }
+    }
+}
