@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { ThemeContext } from '../router/AppRouter';
 
 const CountryCard = () => {
+
+  const { themeIsDark } = useContext(ThemeContext);
+
   return (
-      <div className="countrycard theme">
+      <div className={`countrycard ${ themeIsDark ? 'theme--dark': 'theme' }`}>
 
             <img 
                 src="https://flagcdn.com/w320/tz.png"

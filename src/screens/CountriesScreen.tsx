@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import { BsSearch } from "react-icons/bs";
 import CountryList from "../components/CountryList";
+import { ThemeContext } from "../router/AppRouter";
 
 const CountriesScreen = () => {
+
+  const { themeIsDark } = useContext(ThemeContext);
+
   return (
-    <div className="theme countries">
+    <div className={ `countries ${ themeIsDark ? 'theme--dark': 'theme' }` }>
       <div className="container">
         <div className="countries__data-entry-container">
           <div className="countries__input-field">
