@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 @import './base/base';
+@import './base/mixinx';
 @import './base/settings';
 
 @import './components/app';
@@ -10,3 +11,4 @@
 @import './components/header';
 
 @import './screens/countries';
+@import './screens/detailsscreen';
