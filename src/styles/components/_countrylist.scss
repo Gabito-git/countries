@@ -1,12 +1,12 @@
 .countrylist{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     @media all and (min-width: 558px){
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 6rem;  
     }
 }
