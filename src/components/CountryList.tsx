@@ -9,7 +9,7 @@ const CountryList = ({ countries }: Props) => {
   return (
       <div className="countrylist">
         { countries.map( country =>(
-          <CountryCard country={country} />
+          <CountryCard key={country.cca2} country={country} />
         ) )}
       </div>
   );
