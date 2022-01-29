@@ -40,7 +40,9 @@ const CountriesScreen = () => {
           </div>
 
         </div>
-        <CountryList countries={ countries }/>
+        <div className="countries__list-field">
+          <CountryList countries={ countries }/>
+        </div>
       </div>
     </div>
   )

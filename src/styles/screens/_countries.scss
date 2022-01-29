@@ -3,6 +3,7 @@
     @include transition;
     // background-color: turquoise;
     flex: 1;
+    max-height: 100vh;
 
     &__data-entry-container{
         margin: 2rem 1rem;
@@ -84,5 +85,10 @@
             max-width: 20rem;
         }
         
+    }
+
+    &__list-field{
+        height: 60rem;
+        overflow-y: scroll;
     }
 }
