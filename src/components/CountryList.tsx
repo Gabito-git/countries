@@ -1,13 +1,16 @@
+import { Country } from "../interfaces/countriesInterface";
 import CountryCard from "./CountryCard";
 
-const CountryList = () => {
+interface Props{
+  countries: Country[]
+}
+
+const CountryList = ({ countries }: Props) => {
   return (
       <div className="countrylist">
-          <CountryCard />
-          <CountryCard />
-          <CountryCard />
-          <CountryCard />
-
+        { countries.map( country =>(
+          <CountryCard country={country} />
+        ) )}
       </div>
   );
 };
