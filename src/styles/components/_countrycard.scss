@@ -1,17 +1,24 @@
 .countrycard{
     box-shadow: 1px 0 2px 3px rgba($background--dark, 0.03);
     cursor: pointer;
+    height: 25rem;
     margin: 1rem 0 2rem 0;
-    width: 21rem;
+    width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__flag{
-        max-width: 100%;    
+        max-width: 100%;   
+        flex-basis: 13rem; 
+        overflow-y: hidden;
     }
 
     &__country-info{
         background-color: var(--elements);
         color: var(--text);
-        margin-top: -0.4rem;
+        // margin-top: -0.4rem;
         padding: 2rem;
         @include transition;
     }
