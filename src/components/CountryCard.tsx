@@ -1,13 +1,17 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { ThemeContext } from '../router/AppRouter';
 
 const CountryCard = () => {
 
   const { themeIsDark } = useContext(ThemeContext);
+  const navigate = useNavigate();
 
   return (
-      <div className={`countrycard ${ themeIsDark ? 'theme--dark': 'theme' }`}>
-
+      <div 
+        className={`countrycard ${ themeIsDark ? 'theme--dark': 'theme' }`}
+        onClick={() => navigate('./country/12') }
+      >
             <img 
                 src="https://flagcdn.com/w320/tz.png"
                 alt="flag" 
