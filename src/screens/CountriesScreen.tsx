@@ -3,6 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import CountryList from "../components/CountryList";
 import { ThemeContext } from "../router/AppRouter";
 import { Country } from '../interfaces/countriesInterface';
+import { fetchHelper } from "../helpers/fetch";
 
 const CountriesScreen = () => {
 
@@ -13,9 +14,7 @@ const CountriesScreen = () => {
 
   useEffect(() => {
     const getAllCountries = async() => {
-      const resp = await fetch('https://restcountries.com/v3.1/all')
-      const data = await resp.json();
-
+      const data = await fetchHelper('all');
       setCountries(data);
     }
 
@@ -41,9 +40,7 @@ const CountriesScreen = () => {
     }
 
     const getCountriesByRegion = async(region: string): Promise<Country[]> => {
-      const resp = await fetch(`https://restcountries.com/v3.1/region/${region}`)
-      const data = await resp.json()
-      return data;
+      return await fetchHelper(`region/${ region }`)
     }
 
     const countriesCache = cache( getCountriesByRegion);
@@ -53,8 +50,7 @@ const CountriesScreen = () => {
 
   useEffect(() => {
     const getCountry = async() => {
-      const resp = await fetch(`https://restcountries.com/v3.1/name/${ countryName }`)
-      const data = await resp.json();
+      const data = await fetchHelper(`name/${ countryName }`)
 
       Array.isArray(data) 
         ? setCountries(data) 
