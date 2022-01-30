@@ -56,7 +56,9 @@ const CountriesScreen = () => {
       const resp = await fetch(`https://restcountries.com/v3.1/name/${ countryName }`)
       const data = await resp.json();
 
-      setCountries(data);
+      Array.isArray(data) 
+        ? setCountries(data) 
+        : setCountries([])
     }
 
     countryName && getCountry();
