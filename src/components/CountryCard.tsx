@@ -9,15 +9,17 @@ interface Props{
 
 const CountryCard = ({ country }: Props) => {
 
-  const { name, population, region, capital, flags } = country;
+  const { name, population, region, capital, flags, cca2 } = country;
 
   const { themeIsDark } = useContext(ThemeContext);
   const navigate = useNavigate();
 
+  const formattedPopulation = new Intl.NumberFormat("es-ES").format(population)
+
   return (
       <div 
         className={`countrycard ${ themeIsDark ? 'theme--dark': 'theme' }`}
-        onClick={() => navigate('./country/12') }
+        onClick={() => navigate(`./country/${cca2}`) }
       >
             <img 
                 src={ flags.png }
@@ -28,7 +30,7 @@ const CountryCard = ({ country }: Props) => {
           <div className="countrycard__country-info">
             <h2 className="countrycard__country-name">{ name.common }</h2>
             <div className="countrycard__country-text">
-                <p>Pupulation: <span>{ population }</span></p>
+                <p>Pupulation: <span>{ formattedPopulation }</span></p>
                 <p>Region: <span>{ region }</span></p>
                 <p>Capital: <span>{ capital }</span></p>
             </div>
